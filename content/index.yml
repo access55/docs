@@ -24,11 +24,11 @@ hero:
 features:
   title: What makes this documentation
   links:
-    - label: 'Explore Nuxt UI Pro'
-      icon: 'i-simple-icons-nuxtdotjs'
+    - label: 'Discover more about a55'
+      icon: 'i-heroicons-home'
       trailingIcon: 'i-heroicons-arrow-right-20-solid'
       color: 'gray'
-      to: 'https://ui.nuxt.com/pro'
+      to: 'https://a55.tech'
       target: '_blank'
       size: lg
   items:
