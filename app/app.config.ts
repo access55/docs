@@ -1,6 +1,6 @@
 export default defineAppConfig({
   ui: {
-    primary: 'green',
+    primary: 'pink',
     gray: 'slate',
     footer: {
       bottom: {
@@ -10,53 +10,38 @@ export default defineAppConfig({
     }
   },
   seo: {
-    siteName: 'Nuxt UI Pro - Docs template'
+    siteName: 'A55 platform documentation'
   },
   header: {
     logo: {
-      alt: '',
+      alt: 'A55',
       light: '',
       dark: ''
     },
     search: true,
     colorMode: true,
     links: [{
-      'icon': 'i-simple-icons-github',
-      'to': 'https://github.com/nuxt-ui-pro/docs',
-      'target': '_blank',
-      'aria-label': 'Docs template on GitHub'
+      icon: 'i-line-md-home',
+      to: 'https://a55.tech',
+      target: '_blank',
+      'aria-label': 'A55 Homepage'
     }]
   },
   footer: {
-    credits: 'Copyright © 2023',
+    credits: 'Copyright © 2024',
     colorMode: false,
     links: [{
-      'icon': 'i-simple-icons-nuxtdotjs',
-      'to': 'https://nuxt.com',
-      'target': '_blank',
-      'aria-label': 'Nuxt Website'
-    }, {
-      'icon': 'i-simple-icons-discord',
-      'to': 'https://discord.com/invite/ps2h6QT',
-      'target': '_blank',
-      'aria-label': 'Nuxt UI on Discord'
-    }, {
-      'icon': 'i-simple-icons-x',
-      'to': 'https://x.com/nuxt_js',
-      'target': '_blank',
-      'aria-label': 'Nuxt on X'
-    }, {
-      'icon': 'i-simple-icons-github',
-      'to': 'https://github.com/nuxt/ui',
-      'target': '_blank',
-      'aria-label': 'Nuxt UI on GitHub'
+      icon: 'i-line-md-home',
+      to: 'https://a55.tech',
+      target: '_blank',
+      'aria-label': 'A55 homepage'
     }]
   },
   toc: {
-    title: 'Table of Contents',
+    title: '',
     bottom: {
-      title: 'Community',
-      edit: 'https://github.com/nuxt-ui-pro/docs/edit/main/content',
+      title: '',
+      edit: '',
       links: [{
         icon: 'i-heroicons-star',
         label: 'Star on GitHub',
