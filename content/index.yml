@@ -7,17 +7,17 @@ hero:
   orientation: horizontal
   headline:
     label: Made by a55
-    to: https://a55.tech
+    href: https://a55.tech
     icon: i-heroicons-arrow-top-right-on-square-20-solid
   links:
     - label: Get started
       icon: i-heroicons-arrow-right-20-solid
       trailing: true
-      to: '/getting-started'
+      to: /getting-started
       size: lg
     - label: API Reference
       icon: i-heroicons-code-bracket-20-solid
       trailing: true
-      to: '/api-reference'
+      to: /api-reference
       size: lg
       color: gray
