@@ -7,7 +7,7 @@ hero:
   orientation: horizontal
   headline:
     label: Made by a55
-    href: https://a55.tech
+    to: https://a55.tech
     icon: i-heroicons-arrow-top-right-on-square-20-solid
   links:
     - label: Get started
