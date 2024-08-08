@@ -24,8 +24,8 @@ useHead({
 useSeoMeta({
   titleTemplate: `%s - ${seo?.siteName}`,
   ogSiteName: seo?.siteName,
-  ogImage: '',
-  twitterImage: '',
+  ogImage: 'https://access55-docs.nuxt.space/a55-blue-logo.png',
+  twitterImage: 'https://access55-docs.nuxt.space/a55-blue-logo.png',
   twitterCard: 'summary_large_image'
 })
 
