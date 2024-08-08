@@ -22,7 +22,7 @@ export default defineAppConfig({
     colorMode: true,
     links: [{
       icon: 'i-line-md-home',
-      to: 'https://a55.tech',
+      href: 'https://a55.tech',
       target: '_blank',
       'aria-label': 'A55 Homepage'
     }]
@@ -32,7 +32,7 @@ export default defineAppConfig({
     colorMode: false,
     links: [{
       icon: 'i-line-md-home',
-      to: 'https://a55.tech',
+      href: 'https://a55.tech',
       target: '_blank',
       'aria-label': 'A55 homepage'
     }]
@@ -42,22 +42,7 @@ export default defineAppConfig({
     bottom: {
       title: '',
       edit: '',
-      links: [{
-        icon: 'i-heroicons-star',
-        label: 'Star on GitHub',
-        to: 'https://github.com/nuxt/ui',
-        target: '_blank'
-      }, {
-        icon: 'i-heroicons-book-open',
-        label: 'Nuxt UI Pro docs',
-        to: 'https://ui.nuxt.com/pro/guide',
-        target: '_blank'
-      }, {
-        icon: 'i-simple-icons-nuxtdotjs',
-        label: 'Purchase a license',
-        to: 'https://ui.nuxt.com/pro/purchase',
-        target: '_blank'
-      }]
+      links: []
     }
   }
 })
