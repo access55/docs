@@ -1,0 +1,1 @@
+{"id":"d33cee23-651b-4fdb-80dd-65ca0f74521a","timestamp":1723156322422,"matcher":{"static":{"/":{"prerender":true},"/api/search.json":{"prerender":true}},"wildcard":{},"dynamic":{}},"prerendered":["/api-reference","/getting-started","/getting-started/security","/getting-started/flow","/getting-started/provider","/getting-started/environment","/getting-started/oauth"]}
