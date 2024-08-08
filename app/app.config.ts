@@ -15,8 +15,8 @@ export default defineAppConfig({
   header: {
     logo: {
       alt: 'A55',
-      light: '',
-      dark: ''
+      light: '/a55-blue-logo.png',
+      dark: '/a55-white-logo.png'
     },
     search: true,
     colorMode: true,
