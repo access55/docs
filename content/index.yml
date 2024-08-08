@@ -1,9 +1,9 @@
-title: 'A55 Platform Documentation'
+title: A55 Platform Documentation
 description: Find all the information you need to easily integrate our API into your system.
 navigation: false
 hero:
-  title: 'A55 Platform Documentation'
-  description: 'Welcome to the a55 Platform!'
+  title: A55 Platform Documentation
+  description: Welcome to the a55 Platform!
   orientation: horizontal
   headline:
     label: Made by a55
@@ -18,6 +18,6 @@ hero:
     - label: API Reference
       icon: i-heroicons-code-bracket-20-solid
       trailing: true
-      to: '/reference'
+      to: '/api-reference'
       size: lg
       color: gray
