@@ -40,6 +40,7 @@ const links = computed(() => [toc?.bottom?.edit && {
   to: `${toc.bottom.edit}/${page?.value?._file}`,
   target: '_blank'
 }, ...(toc?.bottom?.links || [])].filter(Boolean))
+
 </script>
 
 <template>
