@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import type { ParsedContent } from '@nuxt/content'
 
-const { seo } = useAppConfig()
-
 const { data: navigation } = await useAsyncData('navigation', () => fetchContentNavigation())
 const { data: files } = useLazyFetch<ParsedContent[]>('/api/search.json', {
   default: () => [],
@@ -21,19 +19,21 @@ useHead({
   }
 })
 
-useSeoMeta({
-  titleTemplate: `%s - ${seo?.siteName}`,
-  ogSiteName: seo?.siteName,
-  ogImage: 'https://access55-docs.nuxt.space/a55-blue-logo.png',
-  twitterImage: 'https://access55-docs.nuxt.space/a55-blue-logo.png',
-  twitterCard: 'summary_large_image'
-})
-
 provide('navigation', navigation)
+
+const route = useRoute()
 </script>
 
 <template>
-  <div>
+  <div v-if="route.path.includes('scala')">
+    <NuxtLoadingIndicator />
+
+    <DocsHeader />
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
+  </div>
+  <div v-else>
     <NuxtLoadingIndicator />
 
     <AppHeader />

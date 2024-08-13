@@ -21,9 +21,9 @@ export default defineAppConfig({
     search: true,
     colorMode: true,
     links: [{
-      icon: 'i-line-md-home',
-      to: 'https://a55.tech',
-      target: '_blank',
+      'icon': 'i-line-md-home',
+      'to': 'https://a55.tech',
+      'target': '_blank',
       'aria-label': 'A55 Homepage'
     }]
   },
@@ -31,9 +31,9 @@ export default defineAppConfig({
     credits: 'Copyright © 2024',
     colorMode: false,
     links: [{
-      icon: 'i-line-md-home',
-      to: 'https://a55.tech',
-      target: '_blank',
+      'icon': 'i-line-md-home',
+      'to': 'https://a55.tech',
+      'target': '_blank',
       'aria-label': 'A55 homepage'
     }]
   },

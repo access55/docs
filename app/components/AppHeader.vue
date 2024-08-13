@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import type { NavItem } from '@nuxt/content'
 
+defineProps<{ hideSearch?: boolean }>()
+
 const navigation = inject<NavItem[]>('navigation', [])
 
 const { header } = useAppConfig()
@@ -22,7 +24,7 @@ const { header } = useAppConfig()
     </template>
 
     <template
-      v-if="header?.search"
+      v-if="header?.search && !hideSearch"
       #center
     >
       <UContentSearchButton class="hidden lg:flex" />
@@ -30,10 +32,18 @@ const { header } = useAppConfig()
 
     <template #right>
       <UContentSearchButton
-        v-if="header?.search"
+        v-if="header?.search && !hideSearch"
         :label="null"
         class="lg:hidden"
       />
+
+      <UButton
+        to="/scalar"
+        size="xs"
+        variant="ghost"
+      >
+        API
+      </UButton>
 
       <UColorModeButton v-if="header?.colorMode" />
 

@@ -4,9 +4,8 @@ import { withoutTrailingSlash } from 'ufo'
 definePageMeta({
   layout: 'docs'
 })
-
 const route = useRoute()
-const { toc, seo } = useAppConfig()
+const { toc } = useAppConfig()
 
 const { data: page } = await useAsyncData(route.path, () => queryContent(route.path).findOne())
 if (!page.value) {
@@ -19,19 +18,6 @@ const { data: surround } = await useAsyncData(`${route.path}-surround`, () => qu
   .findSurround(withoutTrailingSlash(route.path))
 )
 
-useSeoMeta({
-  title: page.value.title,
-  ogTitle: `${page.value.title} - ${seo?.siteName}`,
-  description: page.value.description,
-  ogDescription: page.value.description
-})
-
-defineOgImage({
-  component: 'Docs',
-  title: page.value.title,
-  description: page.value.description
-})
-
 const headline = computed(() => findPageHeadline(page.value))
 
 const links = computed(() => [toc?.bottom?.edit && {
@@ -40,7 +26,6 @@ const links = computed(() => [toc?.bottom?.edit && {
   to: `${toc.bottom.edit}/${page?.value?._file}`,
   target: '_blank'
 }, ...(toc?.bottom?.links || [])].filter(Boolean))
-
 </script>
 
 <template>

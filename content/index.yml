@@ -18,7 +18,7 @@ hero:
     - label: API Reference
       icon: i-heroicons-code-bracket-20-solid
       trailing: true
-      to: /api-reference
+      to: /scalar
       size: lg
       color: gray
 features:
